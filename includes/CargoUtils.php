@@ -790,7 +790,7 @@ class CargoUtils {
 			if ( $dbType != 'mysql' ) {
 				throw new MWException( "Error: a \"Searchtext\" field can currently only be defined for MySQL databases." );
 			}
-			return 'Time';
+			return 'Time(3)';
 		} else { // 'String', 'Page', 'Wikitext string', etc.
 			if ( $size == null ) {
 				$size = $wgCargoDefaultStringBytes;
